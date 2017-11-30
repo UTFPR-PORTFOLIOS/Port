@@ -1,6 +1,6 @@
 package br.edu.utfpr.webapp.vraptor.interceptor;
 
-import br.edu.utfpr.webapp.vraptor.model.Person;
+import br.edu.utfpr.webapp.vraptor.model.Pessoa;
 import java.io.Serializable;
 
 import javax.enterprise.context.SessionScoped;
@@ -11,13 +11,13 @@ import javax.inject.Named;
 public class UserInfo implements Serializable {
 //Classe responsavel por manter a sessao do usuario
     private static final long serialVersionUID = 1232435511714L;
-    private Person person;
+    private Pessoa person;
 
-    public Person getPerson() {
+    public Pessoa getPerson() {
         return person;
     }
 
-    public void login(Person person) {
+    public void login(Pessoa person) {
         this.person = person;
     }
 

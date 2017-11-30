@@ -1,11 +1,15 @@
 package br.edu.utfpr.webapp.vraptor.dao;
 
-import br.edu.utfpr.webapp.vraptor.model.Person;
+import br.edu.utfpr.webapp.vraptor.model.Pessoa;
 import javax.enterprise.context.RequestScoped;
 import javax.persistence.NoResultException;
 
+/**
+ *
+ * @author Victor
+ */
 @RequestScoped
-public class PessoaDAO extends GenericDAO<Integer, Person> {
+public class PessoaDAO extends GenericDAO<Integer, Pessoa> {
 
     public PessoaDAO() {
         super();
@@ -13,16 +17,16 @@ public class PessoaDAO extends GenericDAO<Integer, Person> {
 
     public boolean containsUserWithLogin(String login) {
         Long count = entityManager
-                .createQuery("select count(p) from Person p where p.login = :login", Long.class)
+                .createQuery("select count(p) from Pessoa p where p.login = :login", Long.class)
                 .setParameter("login", login)
                 .getSingleResult();
         return count > 0;
     }
 
-    public Person find(String login, String password) {
+    public Pessoa find(String login, String password) {
         try {
             return entityManager
-                    .createQuery("select p from Person p where p.login = :login and p.password = :password", Person.class)
+                    .createQuery("select p from Pessoa p where p.login = :login and p.password = :password", Pessoa.class)
                     .setParameter("login", login)
                     .setParameter("password", password)
                     .getSingleResult();

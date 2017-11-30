@@ -11,7 +11,7 @@ import br.com.caelum.vraptor.validator.Validator;
 import br.edu.utfpr.webapp.vraptor.dao.PessoaDAO;
 import br.edu.utfpr.webapp.vraptor.interceptor.Public;
 import br.edu.utfpr.webapp.vraptor.interceptor.UserInfo;
-import br.edu.utfpr.webapp.vraptor.model.Person;
+import br.edu.utfpr.webapp.vraptor.model.Pessoa;
 
 /**
  * This class will be responsible to login/logout users. We will use VRaptor URI
@@ -69,7 +69,7 @@ public class HomeController {
     public void login(String login, String password) {
         //Metodo acessado por post atraves de um formulario 
         // search for the user in the database
-        final Person currentUser = pessoaDAO.find(login, password);
+        final Pessoa currentUser = pessoaDAO.find(login, password);
         
         // if no user is found, adds an error message to the validator
         // "invalid_login_or_password" is the message key from messages.properties,

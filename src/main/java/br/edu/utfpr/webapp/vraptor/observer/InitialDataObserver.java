@@ -6,7 +6,6 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 
 import br.com.caelum.vraptor.events.VRaptorInitialized;
-import br.edu.utfpr.webapp.vraptor.model.Person;
 import javax.persistence.Persistence;
 
 @Dependent

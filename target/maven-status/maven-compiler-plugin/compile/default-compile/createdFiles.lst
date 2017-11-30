@@ -1,11 +1,11 @@
 br\edu\utfpr\webapp\vraptor\model\Categoria.class
 br\edu\utfpr\webapp\vraptor\dao\CategoriaDAO.class
-br\edu\utfpr\webapp\vraptor\model\Person.class
 br\edu\utfpr\webapp\vraptor\dao\FuncaoDAO.class
 br\edu\utfpr\webapp\vraptor\controller\HomeController.class
 br\edu\utfpr\webapp\vraptor\observer\InitialDataObserver.class
 br\edu\utfpr\webapp\vraptor\interceptor\UserInfo.class
 br\edu\utfpr\webapp\vraptor\model\Departamento.class
+br\edu\utfpr\webapp\vraptor\controller\api\LoginController.class
 br\edu\utfpr\webapp\vraptor\util\jpa\EntityManagerProducer.class
 br\edu\utfpr\webapp\vraptor\controller\UsuarioController.class
 br\edu\utfpr\webapp\vraptor\validation\impl\LoginAvailableValidator.class
@@ -24,7 +24,6 @@ br\edu\utfpr\webapp\vraptor\controller\api\TipoDocumentoController.class
 br\edu\utfpr\webapp\vraptor\model\TipoDocumento.class
 br\edu\utfpr\webapp\vraptor\controller\api\CategoriaController.class
 br\edu\utfpr\webapp\vraptor\controller\api\DocumentoController.class
-br\edu\utfpr\webapp\vraptor\dao\PessoaDAONew.class
 br\edu\utfpr\webapp\vraptor\controller\api\DepartamentoController.class
 br\edu\utfpr\webapp\vraptor\dao\PessoaDAO.class
 br\edu\utfpr\webapp\vraptor\controller\PersonController.class

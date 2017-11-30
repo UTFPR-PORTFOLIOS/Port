@@ -15,7 +15,7 @@ import br.com.caelum.vraptor.interceptor.SimpleInterceptorStack;
 import br.com.caelum.vraptor.validator.I18nMessage;
 import br.edu.utfpr.webapp.vraptor.controller.HomeController;
 import br.edu.utfpr.webapp.vraptor.dao.PessoaDAO;
-import br.edu.utfpr.webapp.vraptor.model.Person;
+import br.edu.utfpr.webapp.vraptor.model.Pessoa;
 
 /**
  * Interceptor to check if the user is in the session.
@@ -56,7 +56,7 @@ public class AuthorizationInterceptor {
     @AroundCall
     public void intercept(SimpleInterceptorStack stack) {
 
-        Person current = info.getPerson();
+        Pessoa current = info.getPerson();
         try {
             pessoaDAO.refresh(current);
         } catch (Exception e) {

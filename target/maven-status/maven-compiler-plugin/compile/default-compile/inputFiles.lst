@@ -16,15 +16,14 @@ C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\b
 C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\model\Pessoa.java
 C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\observer\InitialDataObserver.java
 C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\validation\impl\LoginAvailableValidator.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\dao\PessoaDAONew.java
 C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\api\DocumentoController.java
 C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\dao\CategoriaDAO.java
 C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\dao\PessoaDAO.java
 C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\dao\TipoDocumentoDAO.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\model\Person.java
 C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\interceptor\AuthorizationInterceptor.java
 C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\api\TipoDocumentoController.java
 C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\dao\DepartamentoDAO.java
+C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\api\LoginController.java
 C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\interceptor\Public.java
 C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\model\TipoDocumento.java
 C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\model\Categoria.java

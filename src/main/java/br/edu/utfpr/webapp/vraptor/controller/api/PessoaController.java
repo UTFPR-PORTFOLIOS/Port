@@ -10,8 +10,7 @@ import br.com.caelum.vraptor.Put;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.view.Results;
 import br.edu.utfpr.webapp.vraptor.dao.PessoaDAO;
-import br.edu.utfpr.webapp.vraptor.dao.PessoaDAONew;
-import br.edu.utfpr.webapp.vraptor.model.Person;
+import br.edu.utfpr.webapp.vraptor.dao.PessoaDAO;
 import br.edu.utfpr.webapp.vraptor.model.Pessoa;
 import javax.inject.Inject;
 
@@ -20,7 +19,7 @@ import javax.inject.Inject;
 public class PessoaController {
     
     @Inject
-    private PessoaDAONew pessoaDAO;
+    private PessoaDAO pessoaDAO;
     //private PessoaDAO pessoaDAO;
     
     @Inject
@@ -63,7 +62,7 @@ public class PessoaController {
     
     @Put(value = {"/",""})
     public void update(Pessoa pessoa) {
-        if(pessoa.getIdPessoa()> 0)
+        if(pessoa.getId()> 0)
             pessoaDAO.update(pessoa);
         
     }

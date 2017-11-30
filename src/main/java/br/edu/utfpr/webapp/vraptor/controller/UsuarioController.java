@@ -10,7 +10,7 @@ import br.com.caelum.vraptor.validator.Validator;
 import br.edu.utfpr.webapp.vraptor.dao.PessoaDAO;
 import br.edu.utfpr.webapp.vraptor.interceptor.Public;
 import br.edu.utfpr.webapp.vraptor.interceptor.UserInfo;
-import br.edu.utfpr.webapp.vraptor.model.Person;
+import br.edu.utfpr.webapp.vraptor.model.Pessoa;
 import br.edu.utfpr.webapp.vraptor.validation.LoginAvailable;
 import javax.validation.Valid;
 
@@ -63,14 +63,14 @@ public class UsuarioController {
     @Path("/usuario")
     @Post
     @Public
-    public void add(@Valid @LoginAvailable Person person) {
+    public void add(@Valid @LoginAvailable Pessoa pessoa) {
         validator.onErrorUsePageOf(HomeController.class).login();
 
-        pessoaDAO.save(person);
+        pessoaDAO.save(pessoa);
 
         // you can add objects to result even in redirects. Added objects will
         // survive one more request when redirecting.
-        result.include("notice", "Person " + person.getLogin() + " successfully added");
+        result.include("notice", "Person " + pessoa.getLogin() + " successfully added");
         result.redirectTo(HomeController.class).login();
     }
 }

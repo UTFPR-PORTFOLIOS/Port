@@ -20,6 +20,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.Length;
 
 /**
@@ -32,10 +33,16 @@ public class Pessoa implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //auto_increment 
-    private int idPessoa;
+    private int id;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    private Person login;
+    @NotNull
+    @Length(min = 3, max = 20) //bean validation
+    @Pattern(regexp = "[a-z0-9_]+", message = "{invalid_user}")
+    private String login;
+
+    @NotNull
+    @Length(min = 4, max = 20)
+    private String password;
 
     @Column(nullable = false)
     @NotNull
@@ -44,17 +51,12 @@ public class Pessoa implements Serializable {
     @Column(nullable = false)
     @Length(min = 3, max = 100)
     @NotNull
-    private String descEmail;
+    private String email;
 
     @Column(nullable = false)
     @Length(min = 3, max = 100)
     @NotNull
-    private String descNome;
-
-    @Column(nullable = false)
-    @Length(min = 3, max = 100)
-    @NotNull
-    private String descSobrenome;
+    private String nome;
 
     @Column(nullable = false)
     @NotNull
@@ -64,7 +66,6 @@ public class Pessoa implements Serializable {
     private int ramal;
 
     @Embedded
-    @NotNull
     private Endereco endereco;
 
     //@Column(nullable = false)
@@ -80,12 +81,12 @@ public class Pessoa implements Serializable {
         this.documentos = documentos;
     }
 
-    public int getIdPessoa() {
-        return idPessoa;
+    public int getId() {
+        return id;
     }
 
-    public void setIdPessoa(int idPessoa) {
-        this.idPessoa = idPessoa;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getRegistroInterno() {
@@ -96,28 +97,20 @@ public class Pessoa implements Serializable {
         this.registroInterno = registroInterno;
     }
 
-    public String getDescEmail() {
-        return descEmail;
+    public String getEmail() {
+        return email;
     }
 
-    public void setDescEmail(String descEmail) {
-        this.descEmail = descEmail;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public String getDescNome() {
-        return descNome;
+    public String getNome() {
+        return nome;
     }
 
-    public void setDescNome(String descNome) {
-        this.descNome = descNome;
-    }
-
-    public String getDescSobrenome() {
-        return descSobrenome;
-    }
-
-    public void setDescSobrenome(String descSobrenome) {
-        this.descSobrenome = descSobrenome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public boolean isNivelAdm() {
@@ -142,6 +135,22 @@ public class Pessoa implements Serializable {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
 }

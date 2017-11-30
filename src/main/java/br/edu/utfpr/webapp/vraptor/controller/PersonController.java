@@ -10,8 +10,9 @@ import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.validator.Validator;
 import br.com.caelum.vraptor.view.Results;
 import br.edu.utfpr.webapp.vraptor.dao.PessoaDAO;
+import br.edu.utfpr.webapp.vraptor.model.Pessoa;
 //import br.edu.utfpr.webapp.vraptor.interceptor.Public;
-import br.edu.utfpr.webapp.vraptor.model.Person;
+
 import java.util.List;
 import javax.inject.Inject;
 import javax.validation.Valid;
@@ -39,22 +40,22 @@ public class PersonController {
     }
 
     @Get(value = {"","/"})
-    public List<Person> list() {
+    public List<Pessoa> list() {
         return pessoaDAO.findAll();
     }
     
 //    @Public
     @Get(value={"{id}", "new"})
-    public Person form(int id) {
+    public Pessoa form(int id) {
         return pessoaDAO.getById(id);
     }
     
-    public Person form(Person person) {
+    public Pessoa form(Pessoa person) {
         return person;
     }
     
     @Post(value = {"/",""})
-    public void save(@NotNull @Valid Person person) {
+    public void save(@NotNull @Valid Pessoa person) {
         validator.onErrorForwardTo(this).form(person);
         
         pessoaDAO.save(person);
@@ -65,7 +66,7 @@ public class PersonController {
     }
     
     @Put(value = {"/",""})
-    public void update(Person person) {
+    public void update(Pessoa person) {
         if(person.getId() > 0)
             pessoaDAO.update(person);
         

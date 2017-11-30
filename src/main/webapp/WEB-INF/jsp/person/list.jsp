@@ -15,15 +15,15 @@
             <tr>
                 <th><a href="?ordem=id">#</a></th>
                 <th><a href="?ordem=name"><fmt:message key="person.name"/></a></th>
-                <th><fmt:message key="person.birthday"/></th>
+                <th><fmt:message key="person.email"/></th>
                 <th><fmt:message key="person.login"/></th>
                 <th></th>
             </tr>
-            <c:forEach var="item" items="${personList}" varStatus="row">
+            <c:forEach var="item" items="${pessoaList}" varStatus="row">
                 <tr>
                     <td>${item.id}</td>
-                    <td>${item.name}</td>
-                    <td><fmt:formatDate value="${item.birthday}" pattern="dd/MM/yyyy"/></td>
+                    <td>${item.nome}</td>
+                    <td>${item.email}</td>
                     <td>${item.login}</td>
                     <td>
                         <ul class="navbar-nav">
