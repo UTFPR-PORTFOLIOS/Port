@@ -46,6 +46,5 @@ public class Tags implements Serializable {
         this.idTag = idTag;
     }
     
-    
 
 }

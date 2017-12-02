@@ -1,36 +1,36 @@
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\api\FuncaoController.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\model\Funcao.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\validation\LoginAvailable.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\dao\DocumentoDAO.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\util\jpa\EntityManagerProducer.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\PessoaController.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\api\PessoaController.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\DepartamentoController.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\dao\FuncaoDAO.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\dao\GenericDAO.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\model\Tags.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\interceptor\UserInfo.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\api\CategoriaController.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\model\Departamento.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\api\DepartamentoController.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\model\Pessoa.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\observer\InitialDataObserver.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\validation\impl\LoginAvailableValidator.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\api\DocumentoController.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\dao\CategoriaDAO.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\dao\PessoaDAO.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\dao\TipoDocumentoDAO.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\interceptor\AuthorizationInterceptor.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\api\TipoDocumentoController.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\dao\DepartamentoDAO.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\api\LoginController.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\interceptor\Public.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\model\TipoDocumento.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\model\Categoria.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\api\TagsController.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\dao\TagsDAO.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\UsuarioController.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\PersonController.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\model\Endereco.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\controller\HomeController.java
-C:\Users\Victor\Desktop\coisas unity\projeto-portifolium-vraptor\src\main\java\br\edu\utfpr\webapp\vraptor\model\Documento.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/controller/HomeController.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/controller/api/PessoaController.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/controller/api/LoginController.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/dao/FuncaoDAO.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/model/Categoria.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/interceptor/AuthorizationInterceptor.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/controller/UsuarioController.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/validation/LoginAvailable.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/dao/DocumentoDAO.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/dao/PessoaDAO.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/controller/DepartamentoController.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/validation/impl/LoginAvailableValidator.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/model/Pessoa.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/model/Departamento.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/model/Documento.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/dao/GenericDAO.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/model/TipoDocumento.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/controller/api/FuncaoController.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/dao/TagsDAO.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/util/jpa/EntityManagerProducer.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/model/Endereco.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/observer/InitialDataObserver.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/controller/api/DocumentoController.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/interceptor/Public.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/dao/CategoriaDAO.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/controller/DocumentoController.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/controller/api/TagsController.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/controller/api/TipoDocumentoController.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/dao/TipoDocumentoDAO.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/model/Tags.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/controller/api/DepartamentoController.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/model/Funcao.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/controller/api/CategoriaController.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/dao/DepartamentoDAO.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/controller/PersonController.java
+/home/kazz/Documents/topicos_avan/projeto-atualizado2-css/projeto-atualizado/Port/src/main/java/br/edu/utfpr/webapp/vraptor/interceptor/UserInfo.java

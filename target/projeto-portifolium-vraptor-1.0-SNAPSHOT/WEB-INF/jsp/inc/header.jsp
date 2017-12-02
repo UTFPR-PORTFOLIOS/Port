@@ -2,26 +2,111 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
         <meta name="author" content="UTFPR - Câmpus Medianeira"/>
         <meta name="reply-to" content="ricardosobjak@utfpr.edu.br"/>
         <meta name="description" content="<fmt:message key="meta.description"/>"/>
         <meta name="keywords" content="educacao, web, desenvolvimento, development, java, opensource"/>
 
-        <title>VRaptor-WebAPP</title>
+        <title>Portfolium</title>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="<c:url value="/css/materialize.css"/>" rel="stylesheet" type="text/css"/>
         <link href="<c:url value="/css/style.css"/>" rel="stylesheet" type="text/css"/>
-        <!--[if lt IE 7]>
-        <script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE7.js" 
-            type="text/javascript"></script>
-        <![endif]-->
+
+        <style>
+            #div1{
+                width: 300px;
+                height: 300px;
+                background-color: 009688;
+                position: relative;
+                -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                animation-name: example1;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+
+            #div2{
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                position: relative;
+                -webkit-animation-name: example5; /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                animation-name: example2;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+
+            #div3{
+                width: 200px;
+                height: 200px;
+                background-color: 006355;
+                position: relative;
+                -webkit-animation-name: example3; /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                animation-name: example3;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+
+            #div4{
+                width: 100px;
+                height: 100px;
+                background-color: white;
+                position: relative;
+                -webkit-animation-name: example4; /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                animation-name: example4;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+
+            #div5{
+                width: 100px;
+                height: 100px;
+                background-color: 006355;
+                position: relative;
+                -webkit-animation-name: example5; /* Safari 4.0 - 8.0 */
+                -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+                animation-name: example5;
+                animation-duration: 2s;
+                animation-fill-mode: forwards;
+            }
+
+
+
+            /* Standard syntax */
+            @keyframes example1 {
+                0%   {background-color:black; left:0px; top:0px;}
+                100%  {background-color:#009688; left:100px; top:0px;}
+            }
+            @keyframes example2 {
+                0%   {background-color:white; left:0px; top:100px;}
+                100%  {background-color:white; left:0px; top:100px;}
+            }
+            @keyframes example3 {
+                0%   {background-color:black; left:0px; top:0px;}
+                100%  {background-color:#006355; left:-16px; top:16px;}
+            }
+
+            @keyframes example4 {
+                0%   {background-color:white; left:0px; top:100px;}
+                100%  {background-color:white; left:0px; top:100px;}
+            }
+
+            @keyframes example5 {
+                0%   {background-color:black; left:0px; top:0px;}
+                100%  {background-color:#004A3C; left:-16px; top:16px;}
+            }
+        </style>
+
+
     </head>
 
     <body>
@@ -32,64 +117,56 @@
             <fmt:setLocale value="${param.language}" scope="session"/>
         </c:if>
 
-        <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="${path}">WebApp-VRaptor</a>
 
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><fmt:message key="entities"/></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item" href="<c:url value="/person" />"><fmt:message key="menu.person"/> REST</a>
-                            <a class="dropdown-item" href="<c:url value="/pessoa/list" />"><fmt:message key="menu.person"/></a>
-                            <a class="dropdown-item disabled" href="#"><fmt:message key="menu.other"/>1</a>
-                            <a class="dropdown-item disabled" href="#"><fmt:message key="menu.other"/>2</a>
-                        </div>
+        <ul id="entidadesDrop" class="dropdown-content">
+            <li><a href="<c:url value="/person" />"><fmt:message key="menu.person"/> REST</a></li>
+            <li><a href="<c:url value="/documento/form" />"><fmt:message key="document"/></a></li>
+
+        </ul>
+
+        <ul id="loginDrop" class="dropdown-content">
+            <li><a href="<c:url value="/person/${userInfo.person.id}" />">Meu Cadastro</a></li>
+            <li class="divider"></li>
+            <li><a href="${linkTo[HomeController].logout}"><fmt:message key="logout"/></a></li>
+        </ul>
+
+        <ul id="langDrop" class="dropdown-content">
+            <li class="${lang eq 'en' ? 'active' : ''}">
+                <a href="?language=en">EN</a>
+            </li>
+
+            <li class="${lang eq 'pt_BR' ? 'active' : ''}">
+                <a href="?language=pt_BR">PT</a>
+            </li>
+        </ul>
+
+
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <a class="brand-logo" href="${path}">Logo</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="dropdown-button" href="#!" data-activates="langDrop">
+                            <i class="material-icons">language arrow_drop_down</i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="dropdown-button" href="#!" data-activates="entidadesDrop">
+                            <fmt:message key="entities"/>
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                    </li>
+
+                    <li class="${not empty userInfo.person ? '' : 'hidden'}">
+                        <a class="dropdown-button" href="#!" data-activates="loginDrop">
+                            ${userInfo.person.login}
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
                     </li>
                 </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item ${lang eq 'en' ? 'active' : ''}">
-                        <a class="nav-link" href="?language=en">EN</a>
-                    </li>
-                    <li class="nav-item ${lang eq 'pt_BR' ? 'active' : ''}">
-                        <a class="nav-link" href="?language=pt_BR">PT</a>
-                    </li>
-                    <li class="nav-item dropdown ${not empty userInfo.person ? '' : 'hidden'}">
-                        <a class="nav-link dropdown-toggle" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">${userInfo.person.login}</a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown02">
-                            <a class="dropdown-item" href="<c:url value="/person/${userInfo.person.id}" />">Meu Cadastro</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="${linkTo[HomeController].logout}"><fmt:message key="logout"/></a>
-                        </div>
-                    </li>
+
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="#">Navbar Link</a></li>
                 </ul>
             </div>
         </nav>
-
-
-        <div id="pageTitle" class="jumbotron text-center">
-            <div class="container">
-                <h1 class="display-3">VRaptor-WebAPP</h1>
-            </div>
-        </div>
-
-        <c:if test="${not empty errors}">
-            <div class="alert alert-danger alert-dismissible fade show" style="z-index: 900">
-                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
-                <c:forEach items="${errors}" var="error">
-                    <b><fmt:message key="${error.category}"/></b> - ${error.message}<br/>
-                </c:forEach>
-            </div>
-        </c:if>
-
-        <c:if test="${not empty notice}">
-            <div class="alert alert-success alert-dismissible fade show" style="z-index: 900"> 
-                <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>
-                ${notice} 
-            </div>
-        </c:if>
-
-        <div class="container">
