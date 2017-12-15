@@ -1,0 +1,16 @@
+package br.edu.utfpr.webapp.vraptor.interceptor;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+/**
+ * Defines that the page has public access.
+ */
+// Serve para os metodos publicos que nao sao necessarios login
+@Target({ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Public {
+
+}
